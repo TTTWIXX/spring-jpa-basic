@@ -22,14 +22,19 @@ dependencies {
 	// SPRING BOOT
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
 	// JPA
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
 	// LOMBOK
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
 	// MARIADB
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+
+	// 쿼리파라미터 추가 외부로그 남기기
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.8'
 
 }
 
